@@ -1,8 +1,11 @@
-# Interdictor 
-
-[![Docs](https://img.shields.io/badge/docs-wiki-blue.svg?style=for-the-badge)](https://github.com/robertcoltheart/Interdictor/wiki) [![NuGet](https://img.shields.io/nuget/v/Interdictor?style=for-the-badge)](https://www.nuget.org/packages/Interdictor) [![Discussions](https://img.shields.io/badge/DISCUSS-ON%20GITHUB-yellow?style=for-the-badge)](https://github.com/robertcoltheart/Interdictor/discussions) [![License](https://img.shields.io/github/license/robertcoltheart/Interdictor?style=for-the-badge)](https://github.com/robertcoltheart/Interdictor/blob/master/LICENSE)
+﻿## About
 
 A thing that does something.
+
+Features:
+ - Ability to mock HttpClient for the purpose of unit tests using a delegating handler
+ - Ability to intercept HttpClientFactory clients in integration tests
+ - Shorthand methods for commmonly used functions
 
 ## Usage
 Install the package from NuGet with `dotnet add package Interdictor`.
@@ -21,6 +24,3 @@ Discuss with us on [Discussions](https://github.com/robertcoltheart/Interdictor/
 
 ## Contributing
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to this project.
-
-## License
-Interdictor is released under the [MIT License](LICENSE)
