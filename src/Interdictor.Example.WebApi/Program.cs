@@ -4,7 +4,7 @@ using Refit;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRefitClient<IGitHubApi>();
+builder.Services.AddRefitClient<IGitHubApi>().ConfigureHttpClient(client => client.BaseAddress = new Uri("http://refit"));
 builder.Services.AddHttpClient();
 builder.Services.AddHttpClient("Named", client => client.BaseAddress = new Uri("http://named"));
 builder.Services.AddHttpClient<BasicGitHubApi>(client => client.BaseAddress = new Uri("http://typed"));
@@ -31,9 +31,16 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 });
 
+app.MapGet("/github/{id}", async (string id, IGitHubApi api) =>
+{
+    return await api.GetEvents();
+});
+
 app.Run();
 
 internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
+
+public partial class Program;
