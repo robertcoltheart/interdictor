@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0</TargetFrameworks>
+    <TargetFramework>net8.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -12,10 +12,10 @@
     <Authors>Robert Coltheart</Authors>
     <Description>A thing that does something</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/robertcoltheart/Interdictor</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/robertcoltheart/Interdictor</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/robertcoltheart/interdictor</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/robertcoltheart/interdictor</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags></PackageTags>
+    <PackageTags>mock http</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
